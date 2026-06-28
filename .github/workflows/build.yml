@@ -17,7 +17,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Generate Gradle Wrapper
+    # Ye step hamara "jugaad" hai, ye server par khud gradlew bana dega
+    - name: Setup Gradle Wrapper
       run: |
         gradle wrapper --gradle-version 8.7
         chmod +x gradlew
